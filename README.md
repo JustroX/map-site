@@ -21,7 +21,7 @@ It saves time.
 
    ![Extension](readme_images/header.PNG)
 
-   - Share the sheet to the extension server's email (`hatchling@evident-wind-286216.iam.gserviceaccount.com`)
+   - Share the sheet to the web server's email (`hatchling@evident-wind-286216.iam.gserviceaccount.com`)
    - Copy the sheet ID (from the URL)
      `https://docs.google.com/spreadsheets/d/{SHEET_ID_HERE}/edit#gid=0`
 
