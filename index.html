@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CWTS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onmousemove="saveCoords(event)">
+    <div id="googleMap" style="width: 100%; height: 80vh"></div>
+
+    <div class="controls">
+      <div class="sheets">
+        <h3>Sheets ID</h3>
+        <input id="sheetID" type="text" />
+        <button onclick="loadMarkers()" id="load">Load Markers</button>
+      </div>
+
+      <div class="sheets">
+        <h3>Pan</h3>
+        <input placeholder="Lat" id="cx" type="number" />
+        <input placeholder="Long" id="cy" type="number" />
+        <button onclick="pan()" id="load">Go</button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="coordinate"></div>
+      <div class="buttons">
+        <div class="button">
+          <button onclick="selectMarker('tree')">Tree</button>
+        </div>
+        <div class="button">
+          <button onclick="selectMarker('shrub')">Shrub</button>
+        </div>
+        <div class="button">
+          <button onclick="selectMarker('other')">Other</button>
+        </div>
+        <div class="button">
+          <textarea id="remark" rows="5" placeholder="Remarks"></textarea>
+        </div>
+        <br />
+
+        <div class="button">
+          <button onclick="closeContext()">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="context.js"></script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAi4jU_utTKYjEKkxIBBuHVhPIiLlF92o&callback=myMap"></script>
+  </body>
+</html>

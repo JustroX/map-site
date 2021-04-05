@@ -1,0 +1,39 @@
+#googleMap div:not([c]) {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgba(0, 0, 0, 0) !important;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 250px;
+  background-color: white;
+  padding: 10px;
+}
+
+.modal .coordinate {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+.modal .buttons {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal .buttons button {
+  width: 100%;
+}
+
+.modal .buttons textarea {
+  width: 100%;
+}
