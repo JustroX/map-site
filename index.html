@@ -47,6 +47,16 @@
     <br /><br />
     <hr />
 
+    <div class="controls">
+      <div class="sheets" style="width: 80%">
+        <h3>Boundary Data</h3>
+        <textarea id="boundary" style="width: 80%" rows="10"></textarea>
+        <br />
+        <button onclick="showBoundary()" id="show-boundary">
+          Show Boundary
+        </button>
+      </div>
+    </div>
     <div style="width: 30%; margin-left: 10%">
       <h3>How to use?</h3>
       <p>
@@ -60,6 +70,7 @@
     <script src="context.js"></script>
     <script src="api.js"></script>
     <script src="app.js"></script>
+    <script src="boundary.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAi4jU_utTKYjEKkxIBBuHVhPIiLlF92o&callback=myMap"></script>
   </body>

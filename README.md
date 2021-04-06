@@ -7,7 +7,8 @@ Website link: [cwts-map.netlify.app](https://cwts-map.netlify.app)
 1. Save coordinates in two clicks.
 2. Supports feature identification ( tree, shrub, others )
 3. Display feature markers 🌳
-4. Compatible with the previous [chrome extension](https://github.com/JustroX/cwts-extension)
+4. Display boundary lines 🗺
+5. Compatible with the previous [chrome extension](https://github.com/JustroX/cwts-extension)
 
 # Why?
 
@@ -46,6 +47,33 @@ It saves time.
      ![Screenshot](readme_images/4.PNG)
 
      ![Screenshot](readme_images/5.PNG)
+
+# How to add bounday lines?
+
+1. Go to [openstreetmap.org](https://nominatim.openstreetmap.org/)
+2. Search your assigned location
+
+   ![Screenshot](readme_images/6.PNG)
+
+3. Click details
+
+   ![Screenshot](readme_images/7.PNG)
+
+4. Click **API request**
+
+   ![Screenshot](readme_images/8.PNG)
+
+5. Copy the whole metadata
+
+   ![Screenshot](readme_images/9.PNG)
+
+6. Paste the metadata to the web app text area named **Boundary Data**
+
+   ![Screenshot](readme_images/10.PNG)
+
+7. Click show boundary and if there's no error the boundary will be displayed
+
+   ![Screenshot](readme_images/11.PNG)
 
 # Contribute
 
